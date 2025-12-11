@@ -1,6 +1,6 @@
 # Todo/Shopping List Manager
 
-🔗 **[Live Demo](https://to-do-[your-username].vercel.app)** | 🌐 **[API Backend](https://todo-shopping-api.onrender.com)**
+🔗 **[Live Demo](https://to-do-olive-omega.vercel.app)** | 🌐 **[API Backend](https://todo-shopping-api.onrender.com)**
 
 ## 📝 Project Overview
 
