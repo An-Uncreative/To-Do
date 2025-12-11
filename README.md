@@ -1,8 +1,10 @@
-# My2 React App: Todo/Shopping List Manager
+# Todo/Shopping List Manager
+
+🔗 **[Live Demo](https://to-do-[your-username].vercel.app)** | 🌐 **[API Backend](https://todo-shopping-api.onrender.com)**
 
 ## 📝 Project Overview
 
-A comprehensive todo and shopping list application built with React. Features full CRUD operations, search functionality, and API integration with a local JSON server backend.
+A full-stack todo and shopping list application built with React and a RESTful API backend. Features complete CRUD operations, real-time search functionality, and persistent data storage.
 
 ## ✨ Features
 
@@ -17,12 +19,21 @@ A comprehensive todo and shopping list application built with React. Features fu
 
 ## 🛠️ Technologies Used
 
+### Frontend
+
 - **React 19.2.0** - UI library with hooks (useState, useEffect)
-- **Vite** - Frontend build tool
+- **Vite** - Frontend build tool and dev server
 - **React Icons** - Icon library for UI elements
-- **JSON Server** - Mock REST API backend (for development)
 - **CSS3** - Responsive styling
 - **ESLint** - Code quality
+- **Vercel** - Frontend deployment platform
+
+### Backend
+
+- **JSON Server** - RESTful API with full CRUD operations
+- **Node.js** - Runtime environment
+- **CORS** - Cross-origin resource sharing
+- **Render.com** - Backend API deployment
 
 ## 📦 Installation & Setup
 
@@ -79,21 +90,34 @@ data/
 - **Error Handling:** Try-catch blocks and error state management
 - **Loading States:** UX improvement with loading indicators
 
-## 🔄 API Endpoints (JSON Server)
+## 🔄 API Endpoints
 
-- `GET http://localhost:3500/items` - Fetch all items
-- `POST http://localhost:3500/items` - Create new item
-- `DELETE http://localhost:3500/items/:id` - Delete item
-- `PATCH http://localhost:3500/items/:id` - Update item
+**Base URL (Production):** `https://todo-shopping-api.onrender.com`  
+**Base URL (Development):** `http://localhost:3500`
 
-## 🚀 Deployment Notes
+- `GET /items` - Fetch all items
+- `GET /items/:id` - Fetch single item
+- `POST /items` - Create new item
+- `PUT /items/:id` - Update item
+- `DELETE /items/:id` - Delete item
 
-When deploying to production, replace the JSON Server mock API with a real backend:
+## 🚀 Deployment
 
-- Node.js/Express server
-- Firebase Realtime Database
-- Supabase
-- MongoDB + Node.js API
+This is a **full-stack application** deployed across two platforms:
+
+### Frontend (React)
+
+- **Platform:** Vercel
+- **Automatic Deployments:** Enabled on push to main branch
+- **Build Command:** `npm run build`
+- **Output Directory:** `dist`
+
+### Backend (JSON Server API)
+
+- **Platform:** Render.com
+- **Repository:** [Todo-Shopping-API](https://github.com/An-Uncreative/Todo-Shopping-API)
+- **Automatic Deployments:** Enabled on push to main branch
+- **Note:** Free tier has cold starts (~30s wake time after inactivity)
 
 ## 🐛 Future Improvements
 
