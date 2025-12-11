@@ -7,7 +7,7 @@ import SearchItem from "./searchItem.jsx";
 import apiRequest from "../apiRequest.jsx";
 
 function App() {
-  const API_URL = "http://localhost:3500/items";
+  const API_URL = "https://todo-shopping-api.onrender.com/items";
   const [items, setItems] = useState([]);
 
   const [newItems, setNewItems] = useState("");
@@ -86,7 +86,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header title="My Shopping List"/>
+      <Header title="My Shopping List" />
       <SearchItem search={search} setSearch={setSearch} />
       <AddItems
         newItems={newItems}
